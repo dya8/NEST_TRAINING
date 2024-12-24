@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+   
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tourism</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="statesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        States
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="statesDropdown">
+                        <li><a class="dropdown-item" href="./#states">All States</a></li>
+                        <li><a class="dropdown-item" href="states.html">7 Sisters of East </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Parallax Landing Page -->
+    <section id="home" class="Inparallax">
+        <div class="overlay">
+            <div class="text-center">
+                <h1 class="parallax-title">Incredible India</h1>
+                <button class="btn btn-outline-light mt-3" onclick="scrollToSection('#states')">Start Tour</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2 data-aos="fade-up">About the Culture</h2>
+            <p data-aos="fade-up" data-aos-delay="200">India's rich cultural tapestry, vibrant festivals, and timeless heritage promise an unforgettable journey through history and tradition <br>From the majestic Himalayas to serene backwaters, <br>every corner of India invites you to experience its unparalleled beauty and warmth  </div>
+    </section>
+
+    <!-- States Section -->
+    <section id="states" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Discover the States</h2>
+            <div class="row">
+                <!-- States begins -->
+
+               
+                <!-- Arunachal Pradesh Card -->
+
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="Ap.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Arunachal Pradesh</h5>
+                            <p><I>"Land of the rising sun, home to serene monasteries and stunning landscapes." </I><p>
+                                <button class="btn btn-primary" onclick="navigateToPage('Arunachal.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Assam Card -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card">
+                        <img src="assam.jpeg" class="card-img-top" alt="Assam">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Assam</h5>
+                            <p><I>"Famous for its lush tea gardens, mighty Brahmaputra River, and vibrant culture."</I><p>
+                                <button class="btn btn-primary" onclick="navigateToPage('Assam.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="mizoram.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mizoram</h5>
+                            <p><I>"A land of rolling hills, vibrant festivals, and bamboo forests."</I></p>
+                            <button class="btn btn-primary" onclick="navigateToPage('mizoram.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="meghalaya.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Meghalaya</h5>
+                            <p><I>"The abode of clouds with mesmerizing waterfalls, caves, and living root bridges."</I></p>
+                            <button class="btn btn-primary" onclick="navigateToPage('Meghalaya.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="nagaland.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nagaland</h5>
+                            <p><I>"Home to colorful tribal traditions, vibrant Hornbill Festival, and scenic mountains."</I></p>
+                            <button class="btn btn-primary" onclick="navigateToPage('nagaland.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="tripura.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tripura</h5>
+                            <p><I>"Rich in heritage with royal palaces, dense forests, and ancient temples."</I> </p>
+                            <button class="btn btn-primary" onclick="navigateToPage('tripura.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="manipur.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Manipur</h5>
+                            <p><I>"The jeweled land known for its floating lake, rich traditions, and classical dance."</I></p>
+                            <button class="btn btn-primary" onclick="navigateToPage('manipur.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="wbjpeg.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">West Bengal</h5>
+                            <p><I>"Where culture dances in the rhythm of traditions."</I></p>
+                            <button class="btn btn-primary" >Explore</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="od.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Odisha</h5>
+                            <p><I>"The soul of incredible temples and timeless heritage."</I></p>
+                            <button class="btn btn-primary" onclick="navigateToPage('manipur.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                
+                                 <!--Jammu and Kashmir-->
+                                 <div class="col-md-4" data-aos="zoom-in">
+                                    <div class="card">
+                                        <img src="j&k.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Jammu & Kashmir </h5>
+                                            <p><I>"Heaven on Earth with snow-capped peaks and pristine valleys." </I><p>
+                                            <button class="btn btn-primary" >Explore</button>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-md-4" data-aos="zoom-in">
+                                    <div class="card">
+                                        <img src="ladakh.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Ladakh </h5>
+                                            <p><I>"The Land of High Passes and boundless adventure."</I><p>
+                                            <button class="btn btn-primary" >Explore</button>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                <div class="col-md-4" data-aos="zoom-in">
+                                    <div class="card">
+                                        <img src="himachal.jpeg" class="card-img-top" alt="Himachal Pradesh">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Himachal Pradesh </h5>
+                                            <p><I>"A nature lover's paradise nestled in the Himalayas." </I><p>
+                                            <button class="btn btn-primary" >Explore</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4" data-aos="zoom-in">
+                                    <div class="card">
+                                        <img src="punjab.jpeg" class="card-img-top" alt="Punjab">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Punjab</h5>
+                                            <p><I> "The vibrant land of five rivers and unmatched hospitality." </I><p>
+                                            <button class="btn btn-primary" >Explore</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-4" data-aos="zoom-in">
+                                    <div class="card">
+                                        <img src="harayana.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Haryana </h5>
+                                            <p><I> "Where tradition meets modernity in the heart of India." </I><p>
+                                            <button class="btn btn-primary" >Explore</button>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="utkand.jpeg" class="card-img-top" alt="uttarkand">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Uttarakand</h5>
+                        <p><I>"The abode of gods with serene landscapes and spirituality." </I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="up.jpeg" class="card-img-top" alt="UP">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Uttar Pradesh</h5>
+                        <p><I> "The cradle of India's culture and spirituality, where history and heritage thrive." </I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="chandigarh.jpeg" class="card-img-top" alt="Punjab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chandigarh</h5>
+                        <p><I> "A city beautiful, blending urban planning with greenery." </I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Western states -->
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="raja.jpeg" class="card-img-top" alt="Punjab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rajasthan</h5>
+                        <p><I> "A royal state of palaces, deserts, and timeless history."</I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="gujarat.jpeg" class="card-img-top" alt="Punjab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gujarat</h5>
+                        <p><I> "A land of legends, festivals, and entrepreneurial spirit." </I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="maharstra.jpeg" class="card-img-top" alt="Punjab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Maharashtra</h5>
+                        <p><I> "The powerhouse of India with a blend of tradition and modernity."</I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="goa.jpeg" class="card-img-top" alt="Punjab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Goa</h5>
+                        <p><I> "A tropical paradise known for beaches, sunsets, and vibrant nightlife."</I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Southern States -->
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="karnataka.jpeg" class="card-img-top" alt="Karnataka">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Karnataka</h5>
+                        <p><I> "A tapestry of IT hubs, historic temples, and lush greenery."</I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="Andhra.jpeg" class="card-img-top" alt="Punjab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Andhra Pradesh</h5>
+                        <p><I>"A treasure trove of ancient architecture and scenic beauty."</I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="teleghana.jpeg" class="card-img-top" alt="Punjab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Telengana</h5>
+                        <p><I> "Where the past and future meet in the heart of the Deccan."</I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card">
+                    <img src="tamil.jpeg" class="card-img-top" alt="Punjab">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tamil Nadu</h5>
+                        <p><I>"The land of temples, tradition, and classical arts."</I><p>
+                        <button class="btn btn-primary" >Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Contact Us</h2>
+            <form data-aos="fade-up" data-aos-delay="200">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+   <!-- Footer -->
+<footer class="footer text-center bg-dark text-white py-4">
+    <div class="container">
+        <p>&copy; 2024 7 Sisters Tourism. All Rights Reserved.</p>
+        <p>Connect with us on:</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Modals for Explore Buttons -->
+    <div class="modal fade" id="stateModal" tabindex="-1" aria-labelledby="stateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="stateModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="stateModalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & AOS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openModal(title, content) {
+            document.getElementById('stateModalLabel').innerText = title;
+            document.getElementById('stateModalBody').innerText = content;
+            var modal = new bootstrap.Modal(document.getElementById('stateModal'));
+            modal.show();
+        }
+        // navigate to pages
+        function navigateToPage(page) {
+        window.location.href = page;
+    }
+     
+    
+    </script>
+</body>
+</html>
+

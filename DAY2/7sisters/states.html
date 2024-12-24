@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Sisters Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tourism</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="statesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        States
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="statesDropdown">
+                        <li><a class="dropdown-item" href="./#states">All States</a></li>
+                        <li><a class="dropdown-item" href="states.html">7 Sisters of East </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Parallax Landing Page -->
+    <section id="home" class="parallax">
+        <div class="overlay">
+            <div class="text-center">
+                <h1 class="parallax-title">Explore the 7 Sister States</h1>
+                <button class="btn btn-outline-light mt-3" onclick="scrollToSection('#states')">Start Tour</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2 data-aos="fade-up">About the 7 Sisters</h2>
+            <p data-aos="fade-up" data-aos-delay="200">The Seven Sister States of India are known for their lush green forests, mountains, unique culture, and diverse heritage.</p>
+        </div>
+    </section>
+
+    <!-- States Section -->
+    <section id="states" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Discover the States</h2>
+            <div class="row">
+                <!-- Arunachal Pradesh Card -->
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="Ap.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Arunachal Pradesh</h5>
+                            <p><I>"Land of the rising sun, home to serene monasteries and stunning landscapes." </I><p>
+                                <button class="btn btn-primary" onclick="navigateToPage('Arunchal.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Assam Card -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card">
+                        <img src="assam.jpeg" class="card-img-top" alt="Assam">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Assam</h5>
+                            <p><I>"Famous for its lush tea gardens, mighty Brahmaputra River, and vibrant culture."</I><p>
+                                <button class="btn btn-primary" onclick="navigateToPage('Assam.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="mizoram.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mizoram</h5>
+                            <p><I>"A land of rolling hills, vibrant festivals, and bamboo forests."</I></p>
+                            <button class="btn btn-primary" onclick="navigateToPage('mizoram.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="meghalaya.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Meghalaya</h5>
+                            <p><I>"The abode of clouds with mesmerizing waterfalls, caves, and living root bridges."</I></p>
+                            <button class="btn btn-primary" onclick="navigateToPage('Meghalaya.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="nagaland.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nagaland</h5>
+                            <p><I>"Home to colorful tribal traditions, vibrant Hornbill Festival, and scenic mountains."</I></p>
+                            <button class="btn btn-primary" >Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="tripura.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tripura</h5>
+                            <p><I>"Rich in heritage with royal palaces, dense forests, and ancient temples."</I> </p>
+                            <button class="btn btn-primary" >Explore</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="card">
+                        <img src="manipur.jpeg" class="card-img-top" alt="Arunachal Pradesh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Manipur</h5>
+                            <p><I>"The jeweled land known for its floating lake, rich traditions, and classical dance."</I></p>
+                            <button class="btn btn-primary" onclick="navigateToPage('manipur.html')">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Contact Us</h2>
+            <form data-aos="fade-up" data-aos-delay="200">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+     <!-- Footer -->
+<footer class="footer text-center bg-dark text-white py-4">
+    <div class="container">
+        <p>&copy; 2024 7 Sisters Tourism. All Rights Reserved.</p>
+        <p>Connect with us on:</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Modals for Explore Buttons -->
+    <div class="modal fade" id="stateModal" tabindex="-1" aria-labelledby="stateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="stateModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="stateModalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & AOS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openModal(title, content) {
+            document.getElementById('stateModalLabel').innerText = title;
+            document.getElementById('stateModalBody').innerText = content;
+            var modal = new bootstrap.Modal(document.getElementById('stateModal'));
+            modal.show();
+        }
+        // navigate to pages
+        function navigateToPage(page) {
+        window.location.href = page;
+    }
+     
+
+    </script>
+</body>
+</html>
+

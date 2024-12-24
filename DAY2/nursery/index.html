@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Blossoms</title>
+    <style>
+        /* Set custom dimensions for the carousel */
+        #carouselExampleIndicators {
+      
+          height: 400px; /* Custom height */
+          margin: 0 auto; /* Center the carousel */
+        }
+      
+        /* Ensure inner items and images match the height */
+        #carouselExampleIndicators .carousel-inner,
+        #carouselExampleIndicators .carousel-item,
+        #carouselExampleIndicators .carousel-item img {
+          height: 400px; /* Match the height of the container */
+          object-fit: cover; /* Maintain aspect ratio and crop to fit */
+        }
+                /* Fixed height for all images */
+                .card-img-top {
+            height: 200px; /* Set desired height */
+            object-fit: cover; /* Maintain aspect ratio and crop overflow */
+        }
+                /* Hover effect for card */
+                .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+       /* body {
+    background-image: url('images.jpeg'); /* Your image path */
+   /* background-size: cover; /* Ensures the image covers the entire screen */
+   /* background-repeat: no-repeat; /* Prevents the image from repeating */
+ /*   background-position: center; /* Centers the image */
+    /*height: 200vh; /* Full viewport height */
+   /* margin: 0; /* Removes default margin */
+/*}*/
+.google-font {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700; /* Bold */
+      font-style: normal;
+    }
+    /* Custom styles for navbar list items */
+    .navbar-nav > li > a {
+      font-family: 'Georgia', serif; /* Change font */
+      color: #2c3e50 !important; /* Change font color */
+      font-size: 16px; /* Adjust font size */
+    }
+
+    /* Custom style for dropdown items */
+    .dropdown-menu > li > a {
+      font-family: 'Arial', sans-serif;
+      color: #555 !important; /* Gray color */
+      font-size: 15px;
+    }
+
+    /* Hover effect for navbar links */
+    .navbar-nav > li > a:hover {
+        color: #3498db !important; /* Change color on hover */
+    }
+
+    .dropdown-menu > li > a:hover {
+      background-color: #f8f9fa; /* Light gray background on hover */
+      color: #3498db !important; /* Greenish hover text */
+    }
+    .navbar-brand {
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    color: #2c3e50; /* Set text color */
+    text-transform: uppercase; /* Uppercase the text */
+  }
+
+  /* Optional: Change color on hover */
+  .navbar-brand:hover {
+   
+    color: #3498db; /* Darker color on hover */
+  }
+
+</style>
+      
+</head>
+<body>
+    
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Nursery</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Bouquets</a></li>
+                  <li><a class="dropdown-item" href="#">Decoration</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+ </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="orchid.jpeg" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="pink.jpeg" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="sunflower.jpeg" class="d-block w-100 " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>    
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mt-3" style="width: 18rem;">
+                    <img src="roses.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Rose<h5>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-3" style="width: 18rem;">
+                <img src="Spring flower.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Spring Flower</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div></div>
+            <div class="col-md-4">
+                <div class="card mt-3" style="width: 18rem;">
+                <img src="lily.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lily</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div>
+            <h1>Faq</h1>
+        </div>
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
